@@ -1,0 +1,133 @@
+/* pages/product/product.wxss */
+.pro-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: space-between;
+}
+.pr-co-header{
+  width: 100%;
+  height: 300rpx;
+  background-image: url(http://ideacom.cn/public/wxsrc/gangcai/images/pr-he-bg2.jpg);
+  background-size: cover;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.pr-he-searchbox{
+  width: 65%;
+  height: 65rpx;
+  margin-top: 5%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.pr-he-searchbox image{
+  width: 40rpx;
+  height: 37rpx;
+  padding: 15rpx;
+  background: rgba(255, 255, 255, 0.7);
+}
+.pr-he-searchbox input{
+  width: 100%;
+  height: 65rpx;
+  font-size: 25rpx;
+  background: rgba(255, 255, 255, 0.3);
+}
+.pr-co-body{
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.pr-co-left_column{
+  width: 25%;
+  padding: 1% 0;
+  background: rgba(150, 150, 150, 0.1);
+}
+.pr-le-items{
+  width: 100%;
+  height: 85rpx;
+  padding: 0 2%;
+  line-height: 85rpx;
+  text-align: center;
+  font-size: 26rpx;
+}
+.pr-le-items_divider{
+  width: 85%;
+  margin: 0 auto;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.1);
+}
+.pr-le-items_hover{
+  background: #FFFFFF;
+}
+.pro-scroll{
+  height: 750rpx;
+  white-space: nowrap;
+}
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.pr-co-right_column{
+  width: 64%;
+  padding: 0 3%;
+}
+.pr-ri-items{
+  width: 98%;
+  height: 130rpx;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 1%;
+  padding-right: 2%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.pr-ri-items image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.pr-it-rc_content{
+  width: 96%;
+  margin-left: 4%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+.pr-rc-row1{
+  width: 100%;
+  height: 65rpx;
+  line-height: 65rpx;
+  font-size: 26rpx;
+}
+.pr-rc-row2{
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 26rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.pr-ro-label{
+  width: 80rpx;
+  height: 35rpx;
+  font-size: 22rpx;
+  color: #25a1fa;
+  text-align: center;
+  line-height: 35rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #25a1fa; 
+}
+/**
+* fixed share btn
+*/
+@import "../public/shareTemplate/shareTemplate.wxss";

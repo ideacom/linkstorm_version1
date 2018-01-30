@@ -1,0 +1,53 @@
+<!--pages/product/product.wxml-->
+<!--NameSpace-pro-->
+<view class='pro-container'>
+  <view class='pr-co-header'>
+    <view class='pr-he-searchbox'>
+      <image src='images/search.png'></image>
+      <input placeholder='{{placeHolder}}'></input>
+    </view>
+  </view>
+  <view class='pr-co-body'>
+    <!--左侧分类列表-->
+    <view class='pr-co-left_column'>
+      <scroll-view class='pro-scroll' scroll-y>
+        <block wx:for="{{leftColumnBtnText}}">
+          <view class="pr-le-items" id='{{index+1}}' bindtap='makeRightDisplay' 
+            hover-class='pr-le-items_hover'>
+            <text>{{item}}</text>
+            <view class='pr-le-items_divider'></view>
+          </view>
+        </block>
+      </scroll-view>
+    </view>
+    <!--右侧产品列表-->
+    <view class='pr-co-right_column'>
+      <scroll-view class='pro-scroll' scroll-y>
+        <block wx:for="{{rightColumnContent}}">
+          <view class='pr-ri-items'>
+            <image src='{{item.image}}'></image>
+            <view class='pr-it-rc_content'>
+              <view class='pr-rc-row1'>
+                <text>{{item.title}}</text>
+              </view>
+              <view class='pr-rc-row2'>
+                  <view>
+                    <text>{{item.priceLabel}}</text>
+                    <text>{{item.priceLeft}}</text>
+                    <text>{{item.priceTag}}</text>
+                    <text>{{item.priceRight}}</text>
+                  </view>
+                  <view class='pr-ro-label'>
+                    <text>{{item.labelText}}</text>
+                  </view>
+              </view>
+            </view>
+          </view>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+  <!--全局分享按钮-->
+  <import src='../public/shareTemplate/shareTemplate.wxml' />
+  <template is='buttom' />
+</view>
